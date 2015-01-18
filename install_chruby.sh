@@ -69,7 +69,7 @@ fi
 ######################################################################
 for program in chruby gem_home ruby_install; do
     version="${!program}"
-    program="${program//_/-}"
+    [[ $program == ruby_install ]] && program="${program//_/-}"
     name="${program}-${version}"
     printf "\nInstalling $name ...\n"
 
