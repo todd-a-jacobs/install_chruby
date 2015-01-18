@@ -1,5 +1,5 @@
 #!/bin/bash
-# vim: sw=4 tw=72 ai et fo=tcqlnj com+=##
+# vim: sw=4 tw=72 ai et fo=tcqlnj
 
 ## Purpose
 ## =======
