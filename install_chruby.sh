@@ -45,6 +45,7 @@
 # Default values.
 ######################################################################
 : ${chruby:=0.3.9}
+: ${gem_home:=0.1.0}
 : ${ruby_install:=0.5.0}
 : ${STOW:=/usr/local/stow}
 
@@ -66,7 +67,7 @@ fi
 ######################################################################
 # Stow with signature verification.
 ######################################################################
-for program in chruby ruby_install; do
+for program in chruby gem_home ruby_install; do
     version="${!program}"
     program="${program//_/-}"
     name="${program}-${version}"
